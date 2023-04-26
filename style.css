@@ -1,0 +1,221 @@
+/* Reset some default styles */
+/*<!-- DEVELOPER: Jenish Patel, IS117002, Spring 2023 ->*/
+body,
+form {
+  margin: 0;
+  padding: 0;
+}
+
+/* Center the form on the page */
+#contact {
+  display: flex;
+  align-items: center;
+  height: 100vh;
+}
+
+/* Style form elements */
+.form-group {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.5rem;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  #contact {
+    height: auto;
+    padding: 1rem;
+  }
+
+  form {
+    margin-top: 2rem;
+  }
+
+  .footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 60px;
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+}
+
+
+
+nav {
+  background: #222122;
+  padding: 10px;
+  margin: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul a {
+  display: inline-block;
+  height: 50px;
+  line-height: 50px;
+  padding: 0 10px;
+  color: white;
+  text-decoration: none;
+  z-index:1;
+  background: #222122;
+}
+
+nav ul a:hover {
+  background-color: #404040;
+  transition: all 1s;
+}
+
+nav ul ul li {
+  display: block;
+}
+
+nav li ul {
+  bottom:0;
+  
+  position: absolute;
+  background: #222122;
+  z-index:-1;
+}
+
+nav li:hover ul {
+  bottom: -300%;
+  display: block;
+  transition: bottom .2s ease-in;
+}
+
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  position: relative;
+  z-index: 1;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul ul {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 160px;
+  z-index: 2;
+}
+
+nav ul ul li {
+  position: relative;
+}
+
+nav ul ul li a {
+  display: block;
+  color: #fff;
+  text-align: center;
+  padding: 8px 16px;
+  text-decoration: none;
+}
+
+nav ul ul ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+}
+
+nav ul li:hover > ul {
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: none;
+}
+
+nav ul li:hover > ul {
+  display: block;
+}
+
+nav ul li > a:hover {
+  background-color: #555;
+}
+
+nav ul ul li > a:hover {
+  background-color: #777;
+}
+
+nav ul li > a:focus {
+  background-color: #555;
+}
+
+nav ul ul li > a:focus {
+  background-color: #777;
+}
+
+nav ul li > a:focus + ul {
+  display: block;
+}
+
+nav ul ul li > a:focus + ul {
+  display: block;
+}
+
+nav ul li > a:focus {
+  outline: none;
+}
+
+nav ul ul li > a:focus {
+  outline: none;
+}
+
+nav ul ul li:last-child > a {
+  border-bottom: none;
+}
+
+
+}
